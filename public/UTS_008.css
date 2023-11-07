@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Young Serif', serif;
+  }
+  
+  .slidepage{
+      width: 100%;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  /* Header : Navbar */
+  header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+  }
+  
+  nav{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+    
+  li{
+      float: right;
+  }
+    
+  li a{
+      display: block;
+      color: #ffff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-weight: 600;
+      text-decoration: none;
+      font-family: 'Gabarito', sans-serif;
+  }
+    
+  li a:hover:not(.active){
+      color: #ffaa00;
+      text-decoration: none;
+  }
+    
+  .active{
+      color: #ffaa00;
+      text-decoration: none;
+  }
+  
+  li img{
+      width: 60px ;
+      margin: 20px;
+  }
+  
+  /* Home */
+  .home{
+      background-image: url(https://github.com/tristaavrilia/tristaavrilia/assets/147494146/e8d96ef7-37f0-4b27-97c1-f1ef4c39da34);
+      padding: 100px;
+      padding-top: 150px;
+      background-size: cover;
+      opacity: 0.8;
+  }
+  
+  .home span{
+      font-size: 100px;
+      font-family: 'Pacifico', cursive;
+  }
+  
+  .home h3{
+      color: #ffff;
+  }
+  
+  /* About */
+  .about{
+      padding:80px;
+      background-color: #008CBA;
+      color: #ffcc00;
+      text-align: center;
+  }
+  
+  .fa-solid{
+      font-size: 100px;
+  }
+  
+  .aboutbox{
+      padding: 50px;
+      outline-style: solid;
+      outline-color: #ffff;
+      color: #ffff;
+      margin: 20px;
+      margin-top: 30px;
+      width: 150px;
+      height: 250px;
+      border-radius: 50px;
+  }
+  
+  .aboutbox:hover{
+      color: #ffcc00;
+      outline-color: #ffcc00;
+  }
+  
+  /* Products */
+  .products{
+      text-align: center;
+      padding: 60px;
+      background-image: url(https://github.com/tristaavrilia/tristaavrilia/assets/147494146/80a163b6-90eb-40cb-8d84-ba4e7abd421a);
+      background-size: cover;
+      background-blend-mode: lighten;
+      color: #ffff;
+  }
+  
+  .products img{
+      border-radius: 50%;
+      height: 150px;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 20px;
+  }
+  
+  .productsbox{
+      background-color: #ffff;
+      width: 80px;
+      margin-top: 50px;
+      margin-inline: 150px;
+      height: 350px;
+      color: #000000;
+      border-radius: 40px;
+  }
+  
+  .productsbox:hover{
+      transition: .5s ease;
+      background-color: #008CBA;
+      color: #ffff;
+  }
+  
+  .btn a{
+      color: #ffcc00;
+  }
+  
+  .btn a:hover{
+      text-decoration: none;
+  }
+  
+  /* Recipe */
+  .recipe{
+      text-align: center;
+      padding: 80px;
+      background-color: #ffcc00;
+  }
+  
+  .recipeleft{
+      margin-top: 90px;
+      text-align: left;
+  }
+  
+  .recipeleft h1{
+      font-size: 70px;
+  }
+  
+  .reciperight{
+      margin-top: 70px;
+  }
+  
+  .carousel-item img{
+      height: 300px;
+      width: 300px;
+      border-radius: 10%;
+      background-size:contain;
+  }
+  
+  .carousel-inner:hover .carousel-item img{
+      opacity: 0.7;
+  }
+  
+  .carousel-caption a{
+      color: #ffff;
+      text-decoration: none;
+  }
+  
+  .carousel-caption a:hover{
+      color: #ffcc00;
+      text-decoration: none;
+  }
+  
+  /* Nutrition Facts */
+  .nutritionfacts{
+      padding: 80px;
+      background-color: #ffcc00;
+  }
+  
+  .nutritioncenter{
+      text-align: center;
+      margin-top: 50px;
+  }
+  
+  .a{
+      font-size: 30px;
+  }
+  
+  .b{
+      font-size: 100px;
+      font-family: 'Pacifico', cursive;
+  }
+  
+  .nutritioncenter a{
+      color: #ffff;
+      text-decoration: none;
+      font-family: 'Gabarito', sans-serif;
+      font-weight: 600;
+  }
+  
+  .nutritioncenter a:hover{
+      color: #ffff;
+      text-decoration: none;
+      font-family: 'Gabarito', sans-serif;
+      font-weight: 600;
+  }
+  
+  .nutritionfacts img{
+      width: 250px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .nutritionfacts img:hover{
+      opacity: 0.8;
+  }
+  
+  
+  /* BMI */
+  .bmi{
+      text-align: center;
+      background-color: #008CBA;
+      padding: 80px;
+  }
+  
+  .bmi h3, p{
+      font-family: 'Gabarito', sans-serif;
+      font-weight: 500;
+      color: #ffff;
+  }
+  
+  .bmi-container h1, p{
+      font-family: 'Gabarito', sans-serif;
+      font-weight: 500;
+      color: #ffff;
+  }
+  
+  button.calculate{
+      margin-top: 20px;
+      font-family: 'Gabarito', sans-serif;
+      font-weight: 500;
+  }
+  
+  .bmi-container input[type=text]{
+      font-family: 'Gabarito', sans-serif;
+      font-weight: 500;
+      color: #000000;
+      width: 50%;
+      text-align: center;
+  }
+  
+  /* Footer : Contact Us */
+  footer{
+      background-image: url(https://github.com/tristaavrilia/tristaavrilia/assets/147494146/d1e9375f-2ebb-49b2-9403-56fba635d504);
+      background-color: #008CBA;
+      background-size: cover;
+      bottom: 0;
+      width: 100%;
+      height: 400px;
+      z-index: 1000;
+      font-size: 10px;
+      padding: 40px;
+  }
+  
+  footer h2, h5{
+      text-align: center;
+  }
+  
+  input[type=text], select, textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+  
+  input[type=submit]{
+      background-color: #ffcc00;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+      float: right;
+  }
+  
+  input[type=submit]:hover{
+      background-color: #ffaa00;
+  }
+  
+  footer .container {
+      border-radius: 5px;
+      background-color: transparent;
+      padding: 20px;
+  }
+  
+  /*tristaavriliasantoso_5026221008*/
+  .tristaavriliasantoso_5026221008{
+      background-color: #008CBA;
+      color: #ffcc00;
+      width: 100%;
+      height: 50px;
+      padding-top: 15px;
+  }
+  
+  .tristaavriliasantoso_5026221008 h5{
+      font-family: 'Gabarito', sans-serif;
+      font-weight: 600;
+  }
