@@ -1,32 +1,53 @@
 @extends('master')
-
 @section('title', 'Data Pegawai')
-
 @section('konten')
 
-	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-	<h3>Data Pegawai</h3>
+<div class="container">
+    <h1 class="d-flex justify-content-center">Tambah Data Pegawai</h1>
+    <br/>
 
-	<a href="/pegawai"> Kembali</a>
+    <div class="d-flex justify-content-end">
+        <a href="/pegawai"><input type="submit" value="Kembali" class="btn btn-success"></a>
+    </div>
 
-	<br/>
-	<br/>
+    <br/>
 
 	<form action="/pegawai/store" method="post" class="form-horizontal">
 		{{ csrf_field() }}
+        <div class="p-5 rounded-lg bg-primary text-white">
+            <div class="form-group row mt-3">
+                <label class="font-weight-bold col-sm-2 col-form-label">Nama</label>
+                <div class="col-sm-10">
+                    <input type="text" required="required" name="nama" placeholder="Masukkan Nama" class="form-control">
+                </div>
+            </div>
 
-		<div class="form-group row">
-            <label for="nama" class="col-xs-3 col-form-label mr-2">Nama</label>
-            <div class="col-xs-9">
-            <input type="text" class="form-control" id="nama" name="nama">
+            <div class="form-group row mt-3">
+                <label class="font-weight-bold col-sm-2 col-form-label">Jabatan</label>
+                <div class="col-sm-10">
+                    <input type="text" required="required" name="jabatan" placeholder="Masukkan Jabatan" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group row mt-3">
+                <label class="font-weight-bold col-sm-2 col-form-label">Umur</label>
+                <div class="col-sm-10">
+                    <input type="number" required="required" name="umur" placeholder="Masukkan Umur" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group row mt-3">
+                <label class="font-weight-bold col-sm-2 col-form-label">Alamat</label>
+                <div class="col-sm-10">
+                    <textarea required="required" name="alamat" class="form-control" placeholder="Masukkan Alamat"></textarea>
+                </div>
+            </div>
+
+            <br/>
+            <div class="d-flex justify-content-center">
+                <input type="submit" value="Tambah Data" class="btn btn-outline-warning">
             </div>
         </div>
-
-		Nama <input type="text" name="nama"> <br/>
-		Jabatan <input type="text" name="jabatan"> <br/>
-		Umur <input type="number" name="umur"> <br/>
-		Alamat <textarea name="alamat"></textarea> <br/>
-		<input type="submit" value="Simpan Data">
 	</form>
-
+</div>
 @endsection

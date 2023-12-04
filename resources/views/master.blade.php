@@ -18,10 +18,10 @@
   <!-- Links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
+      <a class="nav-link" href="/">Welcome Page</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
+      <a class="nav-link" href="/pegawai">Pegawai</a>
     </li>
 
     <!-- Dropdown -->
@@ -30,7 +30,7 @@
         Dropdown link
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="/formulir">Formulir</a>
         <a class="dropdown-item" href="#">Link 2</a>
         <a class="dropdown-item" href="#">Link 3</a>
       </div>
@@ -38,11 +38,12 @@
   </ul>
 </nav>
 <br>
-  
+
 <div class="container">
 @yield('konten')
 </div>
 
+<br>
 @include('footer')
 
 </body>
