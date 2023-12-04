@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/', function () {
+    return view('index');
+})->name('pg');
+
 Route::get('/hello', function () {
     return view('pertemuan1');
 })->name('p1');

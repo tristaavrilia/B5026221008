@@ -222,6 +222,7 @@
             </div>
 
             <div>
+                <a href="{{ route('pg') }}">pegawai</a>
                 <a href="{{ route('p1') }}">pertemuan 1</a>
                 <a href="{{ route('p2') }}">pertemuan 2</a>
                 <a href="{{ route('p3') }}">pertemuan 3</a>
