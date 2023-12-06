@@ -18,31 +18,33 @@
 
                     <input type="hidden" name="id" value="{{ $p->pegawai_id }}">
 
+                    {{ csrf_field() }}
+
                     <div class="form-group row mt-4">
-                        <label class="font-weight-bold col-sm-2 col-form-label">Nama</label>
+                        <p class="font-weight-bold col-sm-2">Nama</p>
                         <div class="col-sm-10">
-                            <input readonly type="text" name="nama" value="{{ $p->pegawai_nama }}" class="form-control">
+                            {{ $p->pegawai_nama }}
                         </div>
                     </div>
 
                     <div class="form-group row mt-4">
-                        <label class="font-weight-bold col-sm-2 col-form-label">Jabatan</label>
+                        <p class="font-weight-bold col-sm-2">Jabatan</p>
                         <div class="col-sm-10">
-                            <input readonly type="text" name="jabatan" value="{{ $p->pegawai_jabatan }}" class="form-control">
+                            {{ $p->pegawai_jabatan }}
                         </div>
                     </div>
 
                     <div class="form-group row mt-4">
-                        <label class="font-weight-bold col-sm-2 col-form-label">Umur</label>
+                        <p class="font-weight-bold col-sm-2">Umur</p>
                         <div class="col-sm-10">
-                            <input readonly type="number" name="umur" value="{{ $p->pegawai_umur }}" class="form-control">
+                            {{ $p->pegawai_umur }}
                         </div>
                     </div>
 
                     <div class="form-group row mt-4">
-                        <label class="font-weight-bold col-sm-2 col-form-label">Alamat</label>
+                        <p class="font-weight-bold col-sm-2">Alamat</p>
                         <div class="col-sm-10">
-                            <textarea readonly name="alamat" class="form-control">{{ $p->pegawai_alamat }}</textarea>
+                            {{ $p->pegawai_alamat }}
                         </div>
                     </div>
 
