@@ -40,7 +40,7 @@ Route::get('showjam/{jam}', 'App\Http\Controllers\DosenController@showjam');
 Route::get('/formulir', 'App\Http\Controllers\DosenController@formulir');
 Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');  //kalo post diencrypt, get dishow
 
-//route CRUD
+//route CRUD Pegawai
 Route::get('/pegawai','App\Http\Controllers\PegawaiController@index');
 Route::get('/pegawai/tambah','App\Http\Controllers\PegawaiController@tambah');
 Route::post('/pegawai/store','App\Http\Controllers\PegawaiController@store');
@@ -55,3 +55,13 @@ Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@indexke
 Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@beli');
 Route::get('/keranjangbelanja/batal/{id}','App\Http\Controllers\KeranjangController@batal');
 Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
+
+//route CRUD Mobil
+Route::get('/mobil','App\Http\Controllers\MobilController@index');
+Route::get('/mobil/tambah','App\Http\Controllers\MobilController@tambah');
+Route::post('/mobil/store','App\Http\Controllers\MobilController@store');
+Route::get('/mobil/edit/{id}','App\Http\Controllers\MobilController@edit');
+Route::post('/mobil/update','App\Http\Controllers\MobilController@update');
+Route::get('/mobil/hapus/{id}','App\Http\Controllers\MobilController@hapus');
+Route::get('/mobil/cari','App\Http\Controllers\MobilController@cari');
+Route::get('/mobil/view/{id}','App\Http\Controllers\MobilController@view');

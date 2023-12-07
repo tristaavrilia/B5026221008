@@ -27,12 +27,12 @@
     <!-- Dropdown -->
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Dropdown link
+        Tugas Lain
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="/formulir">Formulir</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a>
+        <a class="dropdown-item" href="/keranjangbelanja">Tugas Pertemuan 15 Perempuan - Keranjang Belanja </a>
+        <a class="dropdown-item" href="/mobil">Tugas Pra UAS - Mobil</a>
       </div>
     </li>
   </ul>

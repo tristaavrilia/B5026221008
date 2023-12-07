@@ -17,7 +17,7 @@
 	<br/>
 
 	<table class="table table-striped table-hover">
-		<tr>
+		<tr class="text-center">
 			<th>Nama</th>
 			<th>Jabatan</th>
 			<th>Umur</th>
