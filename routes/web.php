@@ -65,3 +65,9 @@ Route::post('/mobil/update','App\Http\Controllers\MobilController@update');
 Route::get('/mobil/hapus/{id}','App\Http\Controllers\MobilController@hapus');
 Route::get('/mobil/cari','App\Http\Controllers\MobilController@cari');
 Route::get('/mobil/view/{id}','App\Http\Controllers\MobilController@view');
+
+//route CRUD Nilai Kuliah
+Route::get('/nilai','App\Http\Controllers\NilaikuliahController@index');
+Route::get('/nilai/tambah','App\Http\Controllers\NilaikuliahController@tambah');
+Route::post('/nilai/store','App\Http\Controllers\NilaikuliahController@store');
+Route::get('/nilai/cari','App\Http\Controllers\NilaikuliahController@cari');
