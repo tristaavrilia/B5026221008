@@ -71,3 +71,7 @@ Route::get('/nilai','App\Http\Controllers\NilaikuliahController@index');
 Route::get('/nilai/tambah','App\Http\Controllers\NilaikuliahController@tambah');
 Route::post('/nilai/store','App\Http\Controllers\NilaikuliahController@store');
 Route::get('/nilai/cari','App\Http\Controllers\NilaikuliahController@cari');
+
+//route kode soal FF
+Route::get('/kodeff','App\Http\Controllers\KodeffController@index');
+Route::post('/kodeff/update','App\Http\Controllers\KodeffController@update');
