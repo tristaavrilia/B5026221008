@@ -1,5 +1,3 @@
-<!-- resources/views/indexff.blade.php -->
-
 @extends('master')
 @section('title', 'Kode Soal FF')
 @section('konten')
